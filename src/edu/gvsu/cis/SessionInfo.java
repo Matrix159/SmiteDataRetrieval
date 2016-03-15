@@ -1,3 +1,5 @@
+package edu.gvsu.cis;
+
 /**
  * Created by Eldridge on 3/14/2016.
  */

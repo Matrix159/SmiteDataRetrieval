@@ -1,8 +1,8 @@
+package edu.gvsu.cis;
+
 import retrofit.Callback;
 import retrofit.http.GET;
-import retrofit.http.POST;
 import retrofit.http.Path;
-import retrofit.http.Query;
 
 import java.util.List;
 

@@ -1,7 +1,9 @@
+package edu.gvsu.cis;
+
 import javax.annotation.Generated;
 
 @Generated("org.jsonschema2pojo")
-public class RankedJoust {
+public class RankedDuel {
 
     private int Leaves;
     private int Losses;
