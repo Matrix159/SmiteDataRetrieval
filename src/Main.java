@@ -19,11 +19,11 @@ import java.util.TimeZone;
  * Created by Josh on 3/14/2016.
  */
 public class Main {
-    private static String devID, authKey, timestamp;
-    public static void main(String[] args)
+    private static final String DEV_ID = "1621";
+    private static final String AUTH_KEY = "C7674733395A4668B6A6E983865A9EDB";
+    private String timestamp;
+    public Main()
     {
-        devID = "1621";
-        authKey = "C7674733395A4668B6A6E983865A9EDB";
         SimpleDateFormat dateFormat =  new SimpleDateFormat("yyyyMMddHHmmss");
         dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         timestamp =  dateFormat.format(new Date());
@@ -31,18 +31,17 @@ public class Main {
                 .setEndpoint("http://api.smitegame.com/smiteapi.svc")
                 .build();
         SmiteApi service = restAdapter.create(SmiteApi.class);
-       // timestamp = newTimeStamp();
 
-        SessionInfo sessionInfo = service.createSession(devID, createSignature("createsession"), timestamp);
+        SessionInfo sessionInfo = service.createSession(DEV_ID, createSignature("createsession"), timestamp);
         System.out.println(sessionInfo.getSession_id());
 
 
-        service.getPlayerASynch(devID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, "Scatmancon2", new ASynchCall());
+        service.getPlayerASynch(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, "scat", new ASynchCall());
 
-        /*try
+        try
         {
-            URL base = new URL("http://api.smitegame.com/smiteapi.svc/getplayerJson/" + devID + "/" + createSignature("getplayer") + "/" + sessionInfo.getSession_id() + "/" + timestamp +
-            "/" + "Matrix159");
+            URL base = new URL("http://api.smitegame.com/smiteapi.svc/getplayerJson/" + DEV_ID + "/" + createSignature("getplayer") + "/" + sessionInfo.getSession_id() + "/" + timestamp +
+            "/" + "doomninja115");
             URLConnection connection = base.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     connection.getInputStream()));
@@ -61,25 +60,28 @@ public class Main {
         catch(IOException ex)
         {
             ex.printStackTrace();
-        }*/
-
-
+        }
 
     }
-    private static String newTimeStamp()
+    public static void main(String[] args)
+    {
+        Main main = new Main();
+    }
+    private String newTimeStamp()
     {
         SimpleDateFormat dateFormat =  new SimpleDateFormat("yyyyMMddHHmmss");
         dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         timestamp =  dateFormat.format(new Date());
         return timestamp;
     }
-    private static String createSignature(String type)
+    private String createSignature(String type)
     {
 
-        String signature = getMD5Hash(devID + type + authKey + timestamp);
+        String signature = getMD5Hash(DEV_ID + type + AUTH_KEY + timestamp);
         return signature;
     }
-    private static String getMD5Hash(String input) {
+    public static String getMD5Hash(String input)
+    {
         StringBuilder sb =  new StringBuilder();
         try
         {
