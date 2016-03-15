@@ -32,22 +32,17 @@ public class Main {
                 .build();
         SmiteApi service = restAdapter.create(SmiteApi.class);
        // timestamp = newTimeStamp();
-        String sig = createSignature(timestamp);
-        System.out.println(timestamp);
-        System.out.println(sig);
 
-        SessionInfo sessionInfo = service.createSession(devID, sig, timestamp);
+        SessionInfo sessionInfo = service.createSession(devID, createSignature("createsession"), timestamp);
         System.out.println(sessionInfo.getSession_id());
-        timestamp = dateFormat.format(new Date());
-        sig = createSignature(timestamp);
-        System.out.println(timestamp);
-        System.out.println(sig);
-        //service.getPlayerASynch(devID, createSignature(timestamp), sessionInfo.getSession_id(), timestamp, "scatmancon2", new ASynchCall());
 
-        try
+
+        service.getPlayerASynch(devID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, "Scatmancon2", new ASynchCall());
+
+        /*try
         {
-            URL base = new URL("http://api.smitegame.com/smiteapi.svc/gettopmatchesJson/" +devID + "/" + createSignature(timestamp) + "/" + sessionInfo.getSession_id() + "/" + timestamp);// +
-            //"/" + "Matrix159");
+            URL base = new URL("http://api.smitegame.com/smiteapi.svc/getplayerJson/" + devID + "/" + createSignature("getplayer") + "/" + sessionInfo.getSession_id() + "/" + timestamp +
+            "/" + "Matrix159");
             URLConnection connection = base.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     connection.getInputStream()));
@@ -66,7 +61,7 @@ public class Main {
         catch(IOException ex)
         {
             ex.printStackTrace();
-        }
+        }*/
 
 
 
@@ -78,10 +73,10 @@ public class Main {
         timestamp =  dateFormat.format(new Date());
         return timestamp;
     }
-    private static String createSignature(String timestamp)
+    private static String createSignature(String type)
     {
 
-        String signature = getMD5Hash(devID + "createsession" + authKey + timestamp);
+        String signature = getMD5Hash(devID + type + authKey + timestamp);
         return signature;
     }
     private static String getMD5Hash(String input) {
