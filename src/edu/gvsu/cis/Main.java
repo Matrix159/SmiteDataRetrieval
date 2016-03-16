@@ -13,6 +13,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
 import java.util.TimeZone;
 
 /**
@@ -24,19 +26,24 @@ public class Main {
     private String timestamp;
     public Main()
     {
-        SimpleDateFormat dateFormat =  new SimpleDateFormat("yyyyMMddHHmmss");
-        dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
-        timestamp =  dateFormat.format(new Date());
+        timestamp =  newTimeStamp();
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint("http://api.smitegame.com/smiteapi.svc")
                 .build();
         SmiteApi service = restAdapter.create(SmiteApi.class);
-
         SessionInfo sessionInfo = service.createSession(DEV_ID, createSignature("createsession"), timestamp);
         System.out.println(sessionInfo.getSession_id());
+        Scanner scan = new Scanner(System.in);
+        while(scan != null)
+        {
+            System.out.print("Enter player name: ");
+            String name = scan.nextLine();
+            List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
+            System.out.println(name +"'s Win percentage: " + (double)((double)playerInfoList.get(0).getWins() / (double)(playerInfoList.get(0).getWins() + playerInfoList.get(0).getLosses())));
+        }
 
-
-        service.getPlayerASynch(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, "scat", new ASynchCall());
+        //List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
+        //System.out.println("Player level:" + playerInfoList.get(0).getLevel());
 
         try
         {

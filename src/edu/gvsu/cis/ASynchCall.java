@@ -8,11 +8,13 @@ import java.util.List;
 
 
 public class ASynchCall implements Callback<List<PlayerInfo>> {
+    private List<PlayerInfo> info;
     @Override
     public void success(List<PlayerInfo> playerInfo, Response response) {
+
         for(PlayerInfo x : playerInfo)
         {
-            System.out.println("Conners scrub level: " + x.getRankedConquest().getLosses());
+            System.out.println("Scatmancon2 has lost: " + x.getRankedConquest().getLosses() + " ranked conquest matches.");
         }
     }
 
