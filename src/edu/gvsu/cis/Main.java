@@ -33,22 +33,28 @@ public class Main {
         SmiteApi service = restAdapter.create(SmiteApi.class);
         SessionInfo sessionInfo = service.createSession(DEV_ID, createSignature("createsession"), timestamp);
         System.out.println(sessionInfo.getSession_id());
-        Scanner scan = new Scanner(System.in);
-        while(scan != null)
+        /*List<FriendsInfo> friendsInfoList = service.getFriends(DEV_ID, createSignature("getfriends"), sessionInfo.getSession_id(), timestamp, "shootlootrepeat");
+        for(FriendsInfo x : friendsInfoList)
+        {
+            System.out.println(x.getName());
+        }*/
+        //Scanner scan = new Scanner(System.in);
+        /*while(scan != null)
         {
             System.out.print("Enter player name: ");
             String name = scan.nextLine();
             List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
+            System.out.println("Leaves: "+ playerInfoList.get(0).getLeaves());
             System.out.println(name +"'s Win percentage: " + (double)((double)playerInfoList.get(0).getWins() / (double)(playerInfoList.get(0).getWins() + playerInfoList.get(0).getLosses())));
-        }
+        }*/
 
         //List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
         //System.out.println("Player level:" + playerInfoList.get(0).getLevel());
 
         try
         {
-            URL base = new URL("http://api.smitegame.com/smiteapi.svc/getplayerJson/" + DEV_ID + "/" + createSignature("getplayer") + "/" + sessionInfo.getSession_id() + "/" + timestamp +
-            "/" + "doomninja115");
+            URL base = new URL("http://api.smitegame.com/smiteapi.svc/getgodranksJson/" + DEV_ID + "/" + createSignature("getgodranks") + "/" + sessionInfo.getSession_id() + "/" + timestamp
+            + "/Matrix159");
             URLConnection connection = base.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     connection.getInputStream()));
@@ -57,7 +63,7 @@ public class Main {
                 System.out.println(inputLine);
             in.close();
 
-            // asking for 20 words that rhyme with "computer"
+
 
         }
         catch(MalformedURLException ex)
