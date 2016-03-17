@@ -1,5 +1,10 @@
 package edu.gvsu.cis;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
+import edu.gvsu.cis.tools.URLTester;
 import retrofit.RestAdapter;
 
 import java.io.BufferedReader;
@@ -24,15 +29,46 @@ public class Main {
     private static final String DEV_ID = "1621";
     private static final String AUTH_KEY = "C7674733395A4668B6A6E983865A9EDB";
     private String timestamp;
+    Firebase myRef;
+    String sessionId;
+    SmiteApi service;
     public Main()
     {
         timestamp =  newTimeStamp();
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint("http://api.smitegame.com/smiteapi.svc")
                 .build();
-        SmiteApi service = restAdapter.create(SmiteApi.class);
-        SessionInfo sessionInfo = service.createSession(DEV_ID, createSignature("createsession"), timestamp);
-        System.out.println(sessionInfo.getSession_id());
+        service = restAdapter.create(SmiteApi.class);
+        myRef = new Firebase("https://flickering-fire-637.firebaseio.com/sessionid");
+        //sessionId = service.createSession(DEV_ID, createSignature("createsession"), timestamp).getSession_id();
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                sessionId = (String) snapshot.getValue();
+                String test = service.testSession(DEV_ID, createSignature("testsession"), sessionId, timestamp);
+                System.out.println(test);
+                if(test.contains("Invalid"))
+                {
+                    sessionId = service.createSession(DEV_ID, createSignature("createsession"), timestamp).getSession_id();
+                    System.out.println(sessionId);
+                    String test1 = service.testSession(DEV_ID, createSignature("testsession"), sessionId, timestamp);
+                    if(test1.contains("successful"))
+                        myRef.setValue(sessionId);
+                }
+
+
+
+
+            }
+
+            @Override
+            public void onCancelled(FirebaseError error) {
+                System.out.println("Did it fail?");
+            }
+        });
+
+while(true);
+        //System.out.println(sessionInfo.getSession_id());
         /*List<FriendsInfo> friendsInfoList = service.getFriends(DEV_ID, createSignature("getfriends"), sessionInfo.getSession_id(), timestamp, "shootlootrepeat");
         for(FriendsInfo x : friendsInfoList)
         {
@@ -51,29 +87,7 @@ public class Main {
         //List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
         //System.out.println("Player level:" + playerInfoList.get(0).getLevel());
 
-        try
-        {
-            URL base = new URL("http://api.smitegame.com/smiteapi.svc/getgodranksJson/" + DEV_ID + "/" + createSignature("getgodranks") + "/" + sessionInfo.getSession_id() + "/" + timestamp
-            + "/Matrix159");
-            URLConnection connection = base.openConnection();
-            BufferedReader in = new BufferedReader(new InputStreamReader(
-                    connection.getInputStream()));
-            String inputLine;
-            while ((inputLine = in.readLine()) != null)
-                System.out.println(inputLine);
-            in.close();
-
-
-
-        }
-        catch(MalformedURLException ex)
-        {
-            ex.printStackTrace();
-        }
-        catch(IOException ex)
-        {
-            ex.printStackTrace();
-        }
+        //URLTester.testURL("testsessionJson", DEV_ID, createSignature("testsession"), sessionId, timestamp);
 
     }
     public static void main(String[] args)
