@@ -4,6 +4,7 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import edu.gvsu.cis.godinfo.GodInfo;
 import edu.gvsu.cis.tools.URLTester;
 import retrofit.RestAdapter;
 
@@ -16,11 +17,14 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.sql.Time;
+import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 import java.util.TimeZone;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Josh on 3/14/2016.
@@ -30,7 +34,7 @@ public class Main {
     private static final String AUTH_KEY = "C7674733395A4668B6A6E983865A9EDB";
     private String timestamp;
     Firebase myRef;
-    String sessionId;
+    String sessionId = null;
     SmiteApi service;
     public Main()
     {
@@ -39,35 +43,31 @@ public class Main {
                 .setEndpoint("http://api.smitegame.com/smiteapi.svc")
                 .build();
         service = restAdapter.create(SmiteApi.class);
-        myRef = new Firebase("https://flickering-fire-637.firebaseio.com/sessionid");
-        //sessionId = service.createSession(DEV_ID, createSignature("createsession"), timestamp).getSession_id();
+        myRef = new Firebase("https://matrixprogramming.firebaseio.com/sessioninfo/");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot snapshot) {
-                sessionId = (String) snapshot.getValue();
-                String test = service.testSession(DEV_ID, createSignature("testsession"), sessionId, timestamp);
-                System.out.println(test);
-                if(test.contains("Invalid"))
-                {
-                    sessionId = service.createSession(DEV_ID, createSignature("createsession"), timestamp).getSession_id();
-                    System.out.println(sessionId);
-                    String test1 = service.testSession(DEV_ID, createSignature("testsession"), sessionId, timestamp);
-                    if(test1.contains("successful"))
-                        myRef.setValue(sessionId);
-                }
-
-
-
-
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                sessionId = dataSnapshot.child("session_id").getValue().toString();
+                System.out.println(sessionId);
             }
 
             @Override
-            public void onCancelled(FirebaseError error) {
-                System.out.println("Did it fail?");
+            public void onCancelled(FirebaseError firebaseError) {
+
             }
         });
+        while(sessionId == null)
+        {
+            System.out.println("wat");
+        }
+        //sessionInfo = service.createSession(DEV_ID, createSignature("createsession"), timestamp);
+        List<GodInfo> info = service.getGods(DEV_ID, createSignature("getgods"), sessionId,timestamp,1);
+        System.out.println(info.get(0).getLore());
+        System.out.println("Sig: " + createSignature("getgods"));
+        System.out.println("time" + timestamp);
+        //URLTester.testURL("getgodsJson", DEV_ID, createSignature("getgods"), sessionInfo.getSession_id(), timestamp, "1");
 
-while(true);
+
         //System.out.println(sessionInfo.getSession_id());
         /*List<FriendsInfo> friendsInfoList = service.getFriends(DEV_ID, createSignature("getfriends"), sessionInfo.getSession_id(), timestamp, "shootlootrepeat");
         for(FriendsInfo x : friendsInfoList)
@@ -87,7 +87,7 @@ while(true);
         //List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
         //System.out.println("Player level:" + playerInfoList.get(0).getLevel());
 
-        //URLTester.testURL("testsessionJson", DEV_ID, createSignature("testsession"), sessionId, timestamp);
+
 
     }
     public static void main(String[] args)

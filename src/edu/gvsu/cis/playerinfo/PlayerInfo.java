@@ -1,4 +1,4 @@
-package edu.gvsu.cis;
+package edu.gvsu.cis.playerinfo;
 
 import javax.annotation.Generated;
 

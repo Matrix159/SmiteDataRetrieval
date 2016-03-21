@@ -1,5 +1,7 @@
 package edu.gvsu.cis;
 
+import edu.gvsu.cis.godinfo.GodInfo;
+import edu.gvsu.cis.playerinfo.PlayerInfo;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
@@ -11,11 +13,7 @@ public class ASynchCall implements Callback<List<PlayerInfo>> {
     private List<PlayerInfo> info;
     @Override
     public void success(List<PlayerInfo> playerInfo, Response response) {
-
-        for(PlayerInfo x : playerInfo)
-        {
-            System.out.println("Scatmancon2 has lost: " + x.getRankedConquest().getLosses() + " ranked conquest matches.");
-        }
+        
     }
 
     @Override
