@@ -1,4 +1,4 @@
-package edu.gvsu.cis;
+package edu.gvsu.cis.connectioninfo;
 
 /**
  * Created by Eldridge on 3/14/2016.

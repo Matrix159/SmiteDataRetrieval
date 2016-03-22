@@ -5,6 +5,7 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import edu.gvsu.cis.godinfo.GodInfo;
+import edu.gvsu.cis.iteminfo.ItemInfo;
 import edu.gvsu.cis.tools.URLTester;
 import retrofit.RestAdapter;
 
@@ -60,14 +61,13 @@ public class Main {
         {
             System.out.println("wat");
         }
-        //sessionInfo = service.createSession(DEV_ID, createSignature("createsession"), timestamp);
-        List<GodInfo> info = service.getGods(DEV_ID, createSignature("getgods"), sessionId,timestamp,1);
-        System.out.println(info.get(0).getLore());
-        System.out.println("Sig: " + createSignature("getgods"));
+        List<ItemInfo> info = service.getItems(DEV_ID, createSignature("getitems"), sessionId,timestamp,1);
+        for(ItemInfo x: info)System.out.println(x.getDeviceName());
+        /*System.out.println("Sig: " + createSignature("getitems"));
+        System.out.println("Session: " + sessionId);
         System.out.println("time" + timestamp);
-        //URLTester.testURL("getgodsJson", DEV_ID, createSignature("getgods"), sessionInfo.getSession_id(), timestamp, "1");
-
-
+        URLTester.testURL("getitemsJson", DEV_ID, createSignature("getitems"), sessionId, timestamp, "1");
+        */
         //System.out.println(sessionInfo.getSession_id());
         /*List<FriendsInfo> friendsInfoList = service.getFriends(DEV_ID, createSignature("getfriends"), sessionInfo.getSession_id(), timestamp, "shootlootrepeat");
         for(FriendsInfo x : friendsInfoList)

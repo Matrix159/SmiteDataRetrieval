@@ -1,6 +1,8 @@
 package edu.gvsu.cis;
 
+import edu.gvsu.cis.connectioninfo.SessionInfo;
 import edu.gvsu.cis.godinfo.GodInfo;
+import edu.gvsu.cis.iteminfo.ItemInfo;
 import edu.gvsu.cis.playerinfo.FriendsInfo;
 import edu.gvsu.cis.playerinfo.PlayerGodInfo;
 import edu.gvsu.cis.playerinfo.PlayerInfo;
@@ -79,6 +81,11 @@ public interface SmiteApi {
     List<GodInfo> getGods(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId,
                           @Path("timestamp") String timestamp,
                           @Path("languageCode") int languageCode);
+
+    @GET("/getitemsJson/{devId}/{signature}/{sessionId}/{timestamp}/{languageCode}")
+    List<ItemInfo> getItems(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId,
+                            @Path("timestamp") String timestamp,
+                            @Path("languageCode") int languageCode);
 
     /**
      * Retrieves player info

@@ -1,43 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cec6a04-6d25-4f0d-acbf-26186661c6e3" name="Default" comment="Added ton of god info">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/DataUsedInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/AbilityDescription1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/AbilityDescription2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/AbilityDescription3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/AbilityDescription4.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/AbilityDescription5.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Ability_1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Ability_2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Ability_3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Ability_4.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Ability_5.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/BasicAttack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Description.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/GodInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/ItemDescription.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Menuitem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Rankitem.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/ASynchCall.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/PlayerInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/RankedConquest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/RankedDuel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/RankedJoust.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/SessionInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmiteDataRetrieval/edu/gvsu/cis/SmiteApi.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/FriendsInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/FriendsInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/PlayerGodInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerGodInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/PlayerInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/RankedConquest.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedConquest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/RankedDuel.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedDuel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/RankedJoust.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedJoust.java" />
+    <list default="true" id="0cec6a04-6d25-4f0d-acbf-26186661c6e3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/Menuitem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/Main.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/SessionInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/SessionInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/DataUsedInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/DataUsedInfo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/SessionInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/SessionInfo.java" />
     </list>
     <ignored path="SmiteDataRetrieval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,84 +36,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
-              <folding>
-                <element signature="e#3722#3723#0" expanded="true" />
-                <element signature="e#3760#3761#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="420">
+              <caret line="64" column="67" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RankedConquest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedConquest.java">
+      <file leaf-file-name="ItemDescription.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemDescription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RankedDuel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedDuel.java">
+      <file leaf-file-name="ItemInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RankedJoust.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedJoust.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FriendsInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/FriendsInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="120">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerGodInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerGodInfo.java">
+      <file leaf-file-name="Menuitem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/Menuitem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="120">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmiteApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataUsedInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/DataUsedInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ASynchCall.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SessionInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/SessionInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASynchCall.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="140">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,7 +119,7 @@
       <file leaf-file-name="GodInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/GodInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="11080">
               <caret line="654" column="16" selection-start-line="654" selection-start-column="16" selection-end-line="654" selection-end-column="16" />
               <folding />
             </state>
@@ -159,7 +129,7 @@
       <file leaf-file-name="Description.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Description.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="120">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
@@ -214,13 +184,15 @@
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/AbilityDescription4.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/AbilityDescription5.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/BasicAttack.java" />
-        <option value="$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/GodInfo.java" />
-        <option value="$PROJECT_DIR$/src/edu/gvsu/cis/Main.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedJoust.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/FriendsInfo.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerGodInfo.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/DataUsedInfo.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/SessionInfo.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/cis/Main.java" />
       </list>
     </option>
   </component>
@@ -237,10 +209,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1942" />
-    <option name="height" value="1242" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -267,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,54 +297,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmiteDataRetrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmiteDataRetrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playerinfo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmiteDataRetrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmiteDataRetrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="godinfo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,17 +318,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\OneDrive\IntelliJ\SmiteDataRetrieval\src\edu\gvsu\cis\godinfo" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\OneDrive\IntelliJ\SmiteDataRetrieval\src\edu\gvsu\cis" />
       <recent name="F:\OneDrive\IntelliJ\SmiteDataRetrieval\src" />
       <recent name="F:\OneDrive\IntelliJ\SmiteDataRetrieval\src\edu\gvsu\cis\tools" />
       <recent name="C:\Users\Josh\OneDrive\IntelliJ\SmiteDataRetrieval\src\edu\gvsu\cis" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\OneDrive\IntelliJ\SmiteDataRetrieval\src\edu\gvsu\cis\godinfo" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -704,15 +632,22 @@
       <option name="project" value="LOCAL" />
       <updated>1458192776656</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a ton of god info">
+      <created>1458563948235</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1458563948235</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="2952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1242" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -722,12 +657,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24068768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="518" y="709" width="431" height="163" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24052005" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="518" y="709" width="431" height="163" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16846652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -758,7 +693,8 @@
     <MESSAGE value="Added friend retrieval and players' god info" />
     <MESSAGE value="Integrating firebase database" />
     <MESSAGE value="Added ton of god info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ton of god info" />
+    <MESSAGE value="Added a ton of god info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a ton of god info" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -771,43 +707,8 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerGodInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/FriendsInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedConquest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedConquest.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerInfo.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -819,20 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/SessionInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/DataUsedInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -869,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264">
           <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,10 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="786">
           <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding>
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="845">
           <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,10 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
           <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding>
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
           <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2185">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-414">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,15 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-414">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,10 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding>
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,16 +847,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
           <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding>
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/Description.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="120">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
@@ -1007,75 +860,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/godinfo/GodInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="11080">
           <caret line="654" column="16" selection-start-line="654" selection-start-column="16" selection-end-line="654" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedConquest.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedDuel.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedJoust.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/FriendsInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerGodInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/DataUsedInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/SessionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/Menuitem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
-          <folding>
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#3760#3761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedConquest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedDuel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/RankedJoust.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/FriendsInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/playerinfo/PlayerGodInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="420">
+          <caret line="64" column="67" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="67" />
           <folding />
         </state>
       </provider>

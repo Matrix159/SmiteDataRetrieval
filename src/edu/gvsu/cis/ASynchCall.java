@@ -13,7 +13,7 @@ public class ASynchCall implements Callback<List<PlayerInfo>> {
     private List<PlayerInfo> info;
     @Override
     public void success(List<PlayerInfo> playerInfo, Response response) {
-        
+
     }
 
     @Override

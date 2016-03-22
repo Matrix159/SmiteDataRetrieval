@@ -1,4 +1,4 @@
-package edu.gvsu.cis;
+package edu.gvsu.cis.connectioninfo;
 
 import javax.annotation.Generated;
 
