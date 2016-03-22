@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cec6a04-6d25-4f0d-acbf-26186661c6e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemDescription.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/ItemInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/iteminfo/Menuitem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/ASynchCall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/Main.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/SmiteApi.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/DataUsedInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/DataUsedInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/gvsu/cis/SessionInfo.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/cis/connectioninfo/SessionInfo.java" />
     </list>
     <ignored path="SmiteDataRetrieval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -639,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1458563948235</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added item info">
+      <created>1458679840035</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1458679840035</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -694,7 +693,8 @@
     <MESSAGE value="Integrating firebase database" />
     <MESSAGE value="Added ton of god info" />
     <MESSAGE value="Added a ton of god info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a ton of god info" />
+    <MESSAGE value="Added item info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added item info" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
