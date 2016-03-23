@@ -4,9 +4,11 @@ import edu.gvsu.cis.connectioninfo.SessionInfo;
 import edu.gvsu.cis.godinfo.GodInfo;
 import edu.gvsu.cis.iteminfo.ItemInfo;
 import edu.gvsu.cis.matchinfo.MatchDetails;
+import edu.gvsu.cis.matchinfo.RecentMatch;
 import edu.gvsu.cis.playerinfo.FriendsInfo;
 import edu.gvsu.cis.playerinfo.PlayerGodInfo;
 import edu.gvsu.cis.playerinfo.PlayerInfo;
+import edu.gvsu.cis.playerinfo.PlayerStatus;
 import retrofit.http.GET;
 import retrofit.http.Path;
 
@@ -120,6 +122,20 @@ public interface SmiteApi {
                                 @Path("match_id") int match_id);
 
     /**
+     * Retrieves recent match history of a player
+     * @param devId
+     * @param signature
+     * @param sessionId
+     * @param timestamp
+     * @param playerName
+     * @return A list of Recent Matches
+     */
+    @GET("/getmatchhistoryJson/{devId}/{signature}/{sessionId}/{timestamp}/{playerName}")
+    List<RecentMatch> getMatchHistory(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId,
+                                       @Path("timestamp") String timestamp,
+                                       @Path("playerName") String playerName);
+
+    /**
      * Retrieves player info
      * @param devId
      * @param signature
@@ -133,6 +149,10 @@ public interface SmiteApi {
                                @Path("timestamp") String timestamp,
                                @Path("playerName") String playerName);
 
+    @GET("/getplayerstatusJson/{devId}/{signature}/{sessionId}/{timestamp}/{playerName}")
+    List<PlayerStatus> getPlayerStatus(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId,
+                                       @Path("timestamp") String timestamp,
+                                       @Path("playerName") String playerName);
 
 
 
