@@ -6,6 +6,7 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import edu.gvsu.cis.godinfo.GodInfo;
 import edu.gvsu.cis.iteminfo.ItemInfo;
+import edu.gvsu.cis.matchinfo.MatchDetails;
 import edu.gvsu.cis.tools.URLTester;
 import retrofit.RestAdapter;
 
@@ -61,32 +62,11 @@ public class Main {
         {
             System.out.println("wat");
         }
-        List<ItemInfo> info = service.getItems(DEV_ID, createSignature("getitems"), sessionId,timestamp,1);
-        for(ItemInfo x: info)System.out.println(x.getDeviceName());
-        /*System.out.println("Sig: " + createSignature("getitems"));
-        System.out.println("Session: " + sessionId);
-        System.out.println("time" + timestamp);
-        URLTester.testURL("getitemsJson", DEV_ID, createSignature("getitems"), sessionId, timestamp, "1");
-        */
-        //System.out.println(sessionInfo.getSession_id());
-        /*List<FriendsInfo> friendsInfoList = service.getFriends(DEV_ID, createSignature("getfriends"), sessionInfo.getSession_id(), timestamp, "shootlootrepeat");
-        for(FriendsInfo x : friendsInfoList)
-        {
-            System.out.println(x.getName());
-        }*/
-        //Scanner scan = new Scanner(System.in);
-        /*while(scan != null)
-        {
-            System.out.print("Enter player name: ");
-            String name = scan.nextLine();
-            List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
-            System.out.println("Leaves: "+ playerInfoList.get(0).getLeaves());
-            System.out.println(name +"'s Win percentage: " + (double)((double)playerInfoList.get(0).getWins() / (double)(playerInfoList.get(0).getWins() + playerInfoList.get(0).getLosses())));
-        }*/
-
-        //List<PlayerInfo> playerInfoList = service.getPlayer(DEV_ID, createSignature("getplayer"), sessionInfo.getSession_id(), timestamp, name);
-        //System.out.println("Player level:" + playerInfoList.get(0).getLevel());
-
+        System.out.println("http://api.smitegame.com/smiteapi.svc/getmatchdetailsJson/" + DEV_ID + "/" + createSignature("getmatchdetails") + "/" +sessionId + "/" + timestamp + "/" + 235886368);
+        List<MatchDetails> list = service.getMatchDetails(DEV_ID, createSignature("getmatchdetails"),sessionId, timestamp, 235886368);
+        for(MatchDetails x : list) {
+            System.out.println(x.getPlayerName() + " : " + x.getKills_Player());
+        }
 
 
     }

@@ -3,6 +3,7 @@ package edu.gvsu.cis;
 import edu.gvsu.cis.connectioninfo.SessionInfo;
 import edu.gvsu.cis.godinfo.GodInfo;
 import edu.gvsu.cis.iteminfo.ItemInfo;
+import edu.gvsu.cis.matchinfo.MatchDetails;
 import edu.gvsu.cis.playerinfo.FriendsInfo;
 import edu.gvsu.cis.playerinfo.PlayerGodInfo;
 import edu.gvsu.cis.playerinfo.PlayerInfo;
@@ -76,16 +77,47 @@ public interface SmiteApi {
                                     @Path("timestamp") String timestamp,
                                     @Path("playerName") String playerName);
 
-
+    /**
+     * Retrievs information about Gods
+     * @param devId
+     * @param signature
+     * @param sessionId
+     * @param timestamp
+     * @param languageCode
+     * @return A list of god info
+     */
     @GET("/getgodsJson/{devId}/{signature}/{sessionId}/{timestamp}/{languageCode}")
     List<GodInfo> getGods(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId,
                           @Path("timestamp") String timestamp,
                           @Path("languageCode") int languageCode);
 
+    /**
+     * Retrieves information about items
+     * @param devId
+     * @param signature
+     * @param sessionId
+     * @param timestamp
+     * @param languageCode
+     * @return A list of item info
+     */
     @GET("/getitemsJson/{devId}/{signature}/{sessionId}/{timestamp}/{languageCode}")
     List<ItemInfo> getItems(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId,
                             @Path("timestamp") String timestamp,
                             @Path("languageCode") int languageCode);
+
+    /**
+     * Retrieves information about a given match
+     * @param devId
+     * @param signature
+     * @param sessionId
+     * @param timestamp
+     * @param match_id
+     * @return A list of match details
+     */
+    @GET("/getmatchdetailsJson/{devId}/{signature}/{sessionId}/{timestamp}/{match_id}")
+    List<MatchDetails> getMatchDetails(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId,
+                                @Path("timestamp") String timestamp,
+                                @Path("match_id") int match_id);
 
     /**
      * Retrieves player info
