@@ -4,12 +4,14 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import edu.gvsu.cis.connectioninfo.DataUsedInfo;
 import edu.gvsu.cis.connectioninfo.SessionInfo;
 import edu.gvsu.cis.godinfo.GodInfo;
 import edu.gvsu.cis.iteminfo.ItemInfo;
 import edu.gvsu.cis.matchinfo.MatchDetails;
 import edu.gvsu.cis.matchinfo.RecentMatch;
 import edu.gvsu.cis.playerinfo.FriendsInfo;
+import edu.gvsu.cis.playerinfo.PlayerStatus;
 import edu.gvsu.cis.tools.URLTester;
 import retrofit.RestAdapter;
 
@@ -39,11 +41,8 @@ public class Main {
     public static void main(String[] args)
     {
         SmiteMaster master = new SmiteMaster();
-        List<FriendsInfo> list = master.getFriends("Matrix159");
-        for(FriendsInfo x: list)
-        {
-            System.out.println(x.getName());
-        }
+        List<PlayerStatus> list = master.getPlayerStatus("blazermanx");
+        System.out.println("Godalva's status: " + list.get(0).getPersonal_status_message() + " : " + list.get(0).getStatus_string());
     }
 
 

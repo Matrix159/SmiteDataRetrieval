@@ -1,5 +1,6 @@
 package edu.gvsu.cis;
 
+import edu.gvsu.cis.connectioninfo.DataUsedInfo;
 import edu.gvsu.cis.connectioninfo.SessionInfo;
 import edu.gvsu.cis.godinfo.GodInfo;
 import edu.gvsu.cis.iteminfo.ItemInfo;
@@ -46,10 +47,10 @@ public interface SmiteApi {
      * @param signature
      * @param sessionId
      * @param timestamp
-     * @return A string describing data usage
+     * @return An object describing data usage
      */
     @GET("/getdatausedJson/{devId}/{signature}/{sessionId}/{timestamp}")
-    String getDataUsed(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId, @Path("timestamp") String timestamp);
+    List<DataUsedInfo> getDataUsed(@Path("devId") String devId, @Path("signature") String signature, @Path("sessionId") String sessionId, @Path("timestamp") String timestamp);
 
     /**
      * Retrieves friend info for a given player

@@ -4,9 +4,16 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import edu.gvsu.cis.connectioninfo.DataUsedInfo;
 import edu.gvsu.cis.connectioninfo.SessionInfo;
+import edu.gvsu.cis.godinfo.GodInfo;
+import edu.gvsu.cis.iteminfo.ItemInfo;
+import edu.gvsu.cis.matchinfo.MatchDetails;
+import edu.gvsu.cis.matchinfo.RecentMatch;
 import edu.gvsu.cis.playerinfo.FriendsInfo;
 import edu.gvsu.cis.playerinfo.PlayerGodInfo;
+import edu.gvsu.cis.playerinfo.PlayerInfo;
+import edu.gvsu.cis.playerinfo.PlayerStatus;
 import retrofit.RestAdapter;
 
 import java.io.UnsupportedEncodingException;
@@ -30,11 +37,6 @@ public class SmiteMaster  {
     SmiteApi service;
     public SmiteMaster()
     {
-        timestamp =  newTimeStamp();
-        RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://api.smitegame.com/smiteapi.svc")
-                .build();
-        service = restAdapter.create(SmiteApi.class);
         myRef = new Firebase("https://matrixprogramming.firebaseio.com/sessioninfo/");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -47,6 +49,12 @@ public class SmiteMaster  {
                 System.out.println("Firebase Error.");
             }
         });
+        timestamp =  newTimeStamp();
+        RestAdapter restAdapter = new RestAdapter.Builder()
+                .setEndpoint("http://api.smitegame.com/smiteapi.svc")
+                .build();
+        service = restAdapter.create(SmiteApi.class);
+
         while(sessionId == null)
         {
             //System.out.println("wat");
@@ -59,6 +67,7 @@ public class SmiteMaster  {
                 ex.printStackTrace();
             }
         }
+        System.out.println("http://api.smitegame.com/smiteapi.svc/getteamplayersJson/" + DEV_ID+"/" + createSignature("getteamplayers")+"/" + sessionId+"/" + timestamp+"/" + "OGOS");
     }
 
 
@@ -73,7 +82,7 @@ public class SmiteMaster  {
         return service.testSession(DEV_ID, createSignature("testsession"), sessionId, timestamp);
     }
 
-    public String getDataUsed()
+    public List<DataUsedInfo> getDataUsed()
     {
         return service.getDataUsed(DEV_ID, createSignature("getdataused"), sessionId, timestamp);
     }
@@ -87,6 +96,38 @@ public class SmiteMaster  {
     {
         return service.getGodRanks(DEV_ID, createSignature("getgodranks"), sessionId, timestamp, player);
     }
+
+    public List<GodInfo> getGods(int languageCode)
+    {
+        return service.getGods(DEV_ID, createSignature("getgods"), sessionId, timestamp, languageCode);
+    }
+
+    public List<ItemInfo> getItems(int languageCode)
+    {
+        return service.getItems(DEV_ID, createSignature("getitems"), sessionId, timestamp, languageCode);
+    }
+
+    public List<MatchDetails> getMatchDetails(int matchId)
+    {
+        return service.getMatchDetails(DEV_ID, createSignature("getmatchdetails"), sessionId, timestamp, matchId);
+    }
+
+    public List<RecentMatch> getMatchHistory(String player)
+    {
+        return service.getMatchHistory(DEV_ID, createSignature("getmatchhistory"), sessionId, timestamp, player);
+    }
+
+    public List<PlayerInfo> getPlayer(String player)
+    {
+        return service.getPlayer(DEV_ID, createSignature("getplayer"), sessionId, timestamp, player);
+    }
+
+    public List<PlayerStatus> getPlayerStatus(String player)
+    {
+        return service.getPlayerStatus(DEV_ID, createSignature("getplayerstatus"), sessionId, timestamp, player);
+    }
+
+
     private String newTimeStamp()
     {
         SimpleDateFormat dateFormat =  new SimpleDateFormat("yyyyMMddHHmmss");
