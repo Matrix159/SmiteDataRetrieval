@@ -31,5 +31,5 @@ public class PlayerInfoTest {
             assertTrue("ret_msg", x.getRet_msg() == null);
         }
     }
-    
+
 }
