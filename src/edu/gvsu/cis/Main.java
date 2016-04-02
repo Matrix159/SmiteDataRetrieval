@@ -1,37 +1,9 @@
 package edu.gvsu.cis;
 
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
-import edu.gvsu.cis.connectioninfo.DataUsedInfo;
-import edu.gvsu.cis.connectioninfo.SessionInfo;
-import edu.gvsu.cis.godinfo.GodInfo;
-import edu.gvsu.cis.iteminfo.ItemInfo;
-import edu.gvsu.cis.matchinfo.MatchDetails;
-import edu.gvsu.cis.matchinfo.RecentMatch;
-import edu.gvsu.cis.playerinfo.FriendsInfo;
-import edu.gvsu.cis.playerinfo.PlayerStatus;
-import edu.gvsu.cis.tools.URLTester;
-import retrofit.RestAdapter;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.sql.Time;
-import java.text.ParsePosition;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import edu.gvsu.cis.playerinfo.PlayerGodInfo;
+
 import java.util.List;
-import java.util.Scanner;
-import java.util.TimeZone;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Josh on 3/14/2016.
@@ -41,8 +13,11 @@ public class Main {
     public static void main(String[] args)
     {
         SmiteMaster master = new SmiteMaster();
-        List<PlayerStatus> list = master.getPlayerStatus("blazermanx");
-        System.out.println("Godalva's status: " + list.get(0).getPersonal_status_message() + " : " + list.get(0).getStatus_string());
+        List<PlayerGodInfo> list = master.getPlayerGodInfo("scatmancon2");
+        for(PlayerGodInfo x : list)
+        {
+            System.out.println(x.getGod() + " : Wins " + x.getWins());
+        }
     }
 
 

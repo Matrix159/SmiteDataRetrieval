@@ -67,7 +67,7 @@ public class SmiteMaster  {
                 ex.printStackTrace();
             }
         }
-        System.out.println("http://api.smitegame.com/smiteapi.svc/getteamplayersJson/" + DEV_ID+"/" + createSignature("getteamplayers")+"/" + sessionId+"/" + timestamp+"/" + "OGOS");
+        System.out.println("http://api.smitegame.com/smiteapi.svc/getmatchhistoryJson/" + DEV_ID+"/" + createSignature("getmatchhistory")+"/" + sessionId+"/" + timestamp+"/" + "Matrix159");
     }
 
 
