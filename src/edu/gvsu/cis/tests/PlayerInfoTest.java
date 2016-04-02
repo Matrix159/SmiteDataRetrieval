@@ -31,10 +31,5 @@ public class PlayerInfoTest {
             assertTrue("ret_msg", x.getRet_msg() == null);
         }
     }
-
-    @Test
-    public void testPlayerInts() throws Exception
-    {
-
-    }
+    
 }
