@@ -67,7 +67,6 @@ public class SmiteMaster  {
                 ex.printStackTrace();
             }
         }
-        System.out.println("http://api.smitegame.com/smiteapi.svc/getmatchhistoryJson/" + DEV_ID+"/" + createSignature("getmatchhistory")+"/" + sessionId+"/" + timestamp+"/" + "Matrix159");
     }
 
 
@@ -119,6 +118,7 @@ public class SmiteMaster  {
 
     public List<PlayerInfo> getPlayer(String player)
     {
+        System.out.println("http://api.smitegame.com/smiteapi.svc/getplayerJson/" + DEV_ID+"/" + createSignature("getplayer")+"/" + sessionId+"/" + timestamp+"/" + player);
         return service.getPlayer(DEV_ID, createSignature("getplayer"), sessionId, timestamp, player);
     }
 

@@ -1,7 +1,7 @@
 package edu.gvsu.cis;
 
 
-import edu.gvsu.cis.playerinfo.PlayerGodInfo;
+import edu.gvsu.cis.playerinfo.*;
 
 import java.util.List;
 
@@ -13,10 +13,10 @@ public class Main {
     public static void main(String[] args)
     {
         SmiteMaster master = new SmiteMaster();
-        List<PlayerGodInfo> list = master.getPlayerGodInfo("scatmancon2");
-        for(PlayerGodInfo x : list)
+        List<PlayerInfo> list = master.getPlayer("scooterop");
+        for(PlayerInfo x : list)
         {
-            System.out.println(x.getGod() + " : Wins " + x.getWins());
+            System.out.println(x.getId());
         }
     }
 
