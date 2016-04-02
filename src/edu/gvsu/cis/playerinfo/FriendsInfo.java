@@ -108,7 +108,7 @@ public class FriendsInfo {
     }
 
     /**
-     * 
+     * Should return null on good response
      * @return
      *     The retMsg
      */
@@ -117,7 +117,7 @@ public class FriendsInfo {
     }
 
     /**
-     * 
+     *
      * @param retMsg
      *     The ret_msg
      */
